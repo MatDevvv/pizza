@@ -1,0 +1,291 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  padding: 10px 20px;
+  position: relative;
+}
+
+.logo {
+  max-height: 120%;
+  width: 140px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.bibi-search {
+  color: white;
+  display: flex;
+  gap: 15px;
+  position: absolute;
+  right: 20px;
+}
+.bibi-list {
+  color: white;
+  display: flex;
+  position: absolute;
+  left: 20px;
+  align-items: center;
+}
+.icons-container svg {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.background {
+  background: linear-gradient(rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.719)),
+    url("../images/pizza.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.container {
+  padding-top: 300px;
+}
+.botão {
+  left: 100px;
+  top: 40px;
+  background-color: orangered;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 24px;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  border: none;
+  border-radius: 90px;
+  cursor: pointer;
+  box-shadow: 20px 2px 5px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+.botão:hover {
+  transition-delay: 4ms;
+  transform: scale(1.1);
+  transition: 250ms linear;
+  color: black;
+}
+.botão::before {
+  cursor: pointer;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('data:image/svg+xml,%3Csvg width="100%25" height="100%25" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M10,10 L90,10 L90,90 L10,90 L10,10 Z" fill="transparent" stroke="%23000000" stroke-width="2" stroke-dasharray="5 5"/%3E%3C/svg%3E'); /* Adiciona uma textura em cima, pode precisar de ajustes */
+  background-size: 20px 20px;
+}
+.container-fluid {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+  min-height: 100vh;
+}
+
+.text-content {
+  text-align: left;
+}
+
+.text-content h2 {
+  font-size: 2.5em;
+  color: #f5f5f5;
+  margin-bottom: 20px;
+}
+
+.text-content p {
+  font-size: 1.2em;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.button {
+  background-color: #d6900d;
+  color: #f5f5f5;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #b09621;
+}
+.delicia {
+  width: 100%;
+}
+.contato-instagram {
+  padding: 50px 0;
+}
+
+.contato-instagram h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.contato-instagram .input-group {
+  margin-bottom: 20px;
+}
+
+.contato-instagram .social-icons {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contato-instagram .social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.contato-instagram .social-icons a {
+  font-size: 20px;
+  color: #333;
+}
+
+.contato-instagram .contact-info {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.contato-instagram .contact-info li {
+  margin-bottom: 10px;
+}
+
+.contato-instagram .contact-info li i {
+  margin-right: 10px;
+  color: #f0ad4e;
+}
+
+.contato-instagram .instagram-feed {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.contato-instagram .instagram-feed img {
+  width: 33.33%;
+  height: auto;
+  margin-bottom: 1px;
+}
+.menu-container {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.categories {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.category {
+  display: inline-block;
+  padding: 15px 20px;
+  cursor: pointer;
+  border-bottom: 2px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.category.active {
+  border-bottom: 2px solid #333;
+}
+
+.category img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.products {
+  padding: 20px;
+}
+
+.product {
+  width: 100%;
+  margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  display: inline-block;
+  width: 350px;
+  text-align: center;
+}
+
+.product img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.product h3 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.product p {
+  font-size: 16px;
+  color: #666;
+}
+.copyright {
+  background-color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  clear: both;
+}
+
+.copyright p {
+  margin-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .logo {
+    padding: 0px;
+    margin: 0 auto;
+    padding-right: 10px;
+  }
+  header {
+    height: 120px;
+  }
+  .logo {
+    width: 120px;
+  }
+
+  .options {
+    gap: 5px;
+  }
+
+  .options a {
+    font-size: 18px;
+  }
+
+  .icons-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .options a {
+    font-size: 20px;
+  }
+}
